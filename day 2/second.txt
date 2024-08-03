@@ -1,0 +1,2 @@
+Variables and datatypes:
+--A Python variable is a reserved memory location to store values. 

@@ -1,0 +1,18 @@
+Module and Pip:
+-Module is file containg code writen by somebody else!
+
+- modules can be flask, django etc
+
+--Preferred Installer Program” or PIP Installs Packages.
+
+-- There are two types of module internal and external
+
+--REPL is an acronym for Read, Evaluate, Print, and Loop.
+
+Comments:
+
+--In python we use # for writing single line coments.
+--For multiple lines we use """  """ triple double quotes.
+
+--for multi line output printing use single triple quotes ''' '''
+
