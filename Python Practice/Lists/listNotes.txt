@@ -1,0 +1,131 @@
+  -: List :-
+--Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+ -: Properts :-
+
+--List items are ordered, changeable, and allow duplicate values.
+
+--List items are indexed, the first item has index [0], the second item has index [1] etc.
+
+--When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+
+ -: The list() Constructor :-
+
+ Ex : thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+print(thislist)
+
+--List items are accessed using index number.
+-- positive index starts from 0 and negative index starts from -1
+
+-: Python - Add List Items :-
+There are three methods to add elements to the list and they are:
+
+1.Append()
+2.Insert()
+3.Extend()
+
+--Append Items:
+To add an item to the end of the list.
+--example:
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+--Insert Items:
+To insert a list item at a specified index, use the insert() method.
+--ex:
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+--Extend List:
+To append elements from another list to the current list, use the extend() method.
+ex:
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+-:Python - Remove List Items:-
+To remove the elements from the list we use following methods:
+1.remove()
+2.pop()
+3.del()
+4.clear()
+
+--Remove:
+The remove() method removes the specified item.
+--ex:
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+
+--Pop:
+The pop() method removes the specified index.
+ex:
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+--Del:
+The del keyword also removes the specified index.
+ex:
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+---Clear:
+The clear() method empties the list.
+
+The list still remains, but it has no content.
+
+Ex:
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+--Python - Sort Lists:
+
+--Sort List Alphanumerically:
+--List objects have a sort() method that will sort the list alphanumerically, ascending, by default
+
+--Sort Descending
+To sort descending, use the keyword argument reverse = True:
+
+-:Copy a List:-
+You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+
+--Use the copy() method:-
+You can use the built-in List method copy() to copy a list.
+-ex:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+--Use the list() method:-
+Another way to make a copy is to use the built-in method list().
+--ex:
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+--Use the slice Operator:
+You can also make a copy of a list by using the : (slice) operator.
+Ex:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+-:List Methods:-
+append():Adds an element at the end of the list
+clear():Removes all the elements from the list
+copy():Returns a copy of the list
+count():Returns the number of elements with the specified value
+extend():Add the elements of a list (or any iterable), to the end of the current list
+index():Returns the index of the first element with the specified value
+insert():Adds an element at the specified position
+pop():Removes the element at the specified position
+remove():Removes the item with the specified value
+reverse():Reverses the order of the list
+sort():Sorts the list
